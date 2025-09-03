@@ -1,0 +1,38 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- 样式定义 -->
+  <style>
+    .rounded-square {
+      fill: #ffffff;
+      stroke: #00aa00;
+      stroke-width: 8;
+    }
+    .small-square {
+      fill: #00aa00;
+    }
+  </style>
+  
+  <!-- 左上带圆角的正方形 -->
+  <g transform="translate(30, 30)">
+    <rect class="rounded-square" x="0" y="0" width="160" height="160" rx="20" ry="20"/>
+    <rect class="small-square" x="55" y="55" width="50" height="50" rx="10" ry="10"/>
+  </g>
+  
+  <!-- 右上带圆角的正方形 -->
+  <g transform="translate(210, 30)">
+    <rect class="rounded-square" x="0" y="0" width="160" height="160" rx="20" ry="20"/>
+    <rect class="small-square" x="55" y="55" width="50" height="50" rx="10" ry="10"/>
+  </g>
+  
+  <!-- 左下带圆角的正方形 -->
+  <g transform="translate(30, 210)">
+    <rect class="rounded-square" x="0" y="0" width="160" height="160" rx="20" ry="20"/>
+    <rect class="small-square" x="55" y="55" width="50" height="50" rx="10" ry="10"/>
+  </g>
+  
+  <!-- 右下带圆角的正方形 -->
+  <g transform="translate(210, 210)">
+    <rect class="rounded-square" x="0" y="0" width="160" height="160" rx="20" ry="20"/>
+    <rect class="small-square" x="55" y="55" width="50" height="50" rx="10" ry="10"/>
+  </g>
+</svg>

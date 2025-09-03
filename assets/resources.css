@@ -1,0 +1,166 @@
+/* 全局资源CSS - 使用CSS变量和url()函数确保所有资源被Vite打包 */
+
+:root {
+  /* NewsImg资源 */
+  --news-img-0: url('@/assets/newsImg/0.png');
+  --news-img-1: url('@/assets/newsImg/1.png');
+  --news-img-2: url('@/assets/newsImg/2.png');
+  --news-img-3: url('@/assets/newsImg/3.png');
+  --news-img-4: url('@/assets/newsImg/4.png');
+  --news-img-5: url('@/assets/newsImg/5.png');
+  --news-img-6: url('@/assets/newsImg/6.png');
+  --news-img-7: url('@/assets/newsImg/7.png');
+  
+  /* News目录资源 */
+  --news-alice-pv: url('@/assets/news/Alice-Pv.png');
+  --news-activity-bangbu: url('@/assets/news/activity-邦布券.png');
+  --news-birthday-keledan: url('@/assets/news/birthday-柯蕾妲.png');
+  --news-activity-tktm: url('@/assets/news/news-activity-tktm.png');
+  --news-activity-ylcdmx: url('@/assets/news/news-activity-ylcdmx.png');
+  --news-jtdcxj: url('@/assets/news/news-jtdcxj.png');
+  
+  /* SettingImg资源 */
+  --setting-img-1: url('@/assets/settingImg/2c922e7a628a0da421c379fd01dadbc7_3613600539715984322.png');
+  --setting-img-2: url('@/assets/settingImg/7a001b1888212dcf02dac506218db1a8_6221512774701940076.png');
+  --setting-img-3: url('@/assets/settingImg/7dc8e490e0e15e0656458003241b94ad_8371389282001677330.png');
+  
+  /* 常用资源 */
+  --zzz-opening-webm: url('@/assets/zzz_opening.webm');
+  --zzz-opening-gif: url('@/assets/zzz_opening.gif');
+  --liuying-rotate: url('@/assets/流萤旋转.gif');
+  --liuying-fire: url('@/assets/流萤喷火.gif');
+  --liuying-star: url('@/assets/流萤点燃星海.gif');
+  --char-bg-left: url('@/assets/char-bg-left.png');
+  --char-bg-right: url('@/assets/char-bg-right.png');
+  --avatar-border: url('@/assets/头像边框.png');
+  --news-bg: url('@/assets/newsBg.jpg');
+  --main-background: url('@/assets/main-background.jpg');
+  --news-list-bg: url('@/assets/newsListBg.webp');
+  
+  /* 视频资源 */
+  --news-video-5: url('@/assets/newsImg/5.mp4');
+  --news-video-7: url('@/assets/newsImg/7.mp4');
+}
+
+/* 强制加载所有资源 - 创建隐藏元素使用这些资源 */
+.resources-preloader {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.resources-preloader div {
+  /* NewsImg资源 */
+  width: 1px;
+  height: 1px;
+  background-image: var(--news-img-0);
+}
+
+.resources-preloader div:nth-child(2) {
+  background-image: var(--news-img-1);
+}
+
+.resources-preloader div:nth-child(3) {
+  background-image: var(--news-img-2);
+}
+
+.resources-preloader div:nth-child(4) {
+  background-image: var(--news-img-3);
+}
+
+.resources-preloader div:nth-child(5) {
+  background-image: var(--news-img-4);
+}
+
+.resources-preloader div:nth-child(6) {
+  background-image: var(--news-img-5);
+}
+
+.resources-preloader div:nth-child(7) {
+  background-image: var(--news-img-6);
+}
+
+.resources-preloader div:nth-child(8) {
+  background-image: var(--news-img-7);
+}
+
+/* News目录资源 */
+.resources-preloader div:nth-child(9) {
+  background-image: var(--news-alice-pv);
+}
+
+.resources-preloader div:nth-child(10) {
+  background-image: var(--news-activity-bangbu);
+}
+
+.resources-preloader div:nth-child(11) {
+  background-image: var(--news-birthday-keledan);
+}
+
+.resources-preloader div:nth-child(12) {
+  background-image: var(--news-activity-tktm);
+}
+
+.resources-preloader div:nth-child(13) {
+  background-image: var(--news-activity-ylcdmx);
+}
+
+.resources-preloader div:nth-child(14) {
+  background-image: var(--news-jtdcxj);
+}
+
+/* SettingImg资源 */
+.resources-preloader div:nth-child(15) {
+  background-image: var(--setting-img-1);
+}
+
+.resources-preloader div:nth-child(16) {
+  background-image: var(--setting-img-2);
+}
+
+.resources-preloader div:nth-child(17) {
+  background-image: var(--setting-img-3);
+}
+
+/* 常用资源 */
+.resources-preloader div:nth-child(18) {
+  background-image: var(--zzz-opening-gif);
+}
+
+.resources-preloader div:nth-child(19) {
+  background-image: var(--liuying-rotate);
+}
+
+.resources-preloader div:nth-child(20) {
+  background-image: var(--liuying-fire);
+}
+
+.resources-preloader div:nth-child(21) {
+  background-image: var(--liuying-star);
+}
+
+.resources-preloader div:nth-child(22) {
+  background-image: var(--char-bg-left);
+}
+
+.resources-preloader div:nth-child(23) {
+  background-image: var(--char-bg-right);
+}
+
+.resources-preloader div:nth-child(24) {
+  background-image: var(--avatar-border);
+}
+
+.resources-preloader div:nth-child(25) {
+  background-image: var(--news-bg);
+}
+
+.resources-preloader div:nth-child(26) {
+  background-image: var(--main-background);
+}
+
+.resources-preloader div:nth-child(27) {
+  background-image: var(--news-list-bg);
+}
